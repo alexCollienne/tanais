@@ -1,0 +1,32 @@
+body{
+	width:800px;
+	margin:auto;}
+
+#search-box, #mailing-box, #menu-box, #right-side, #footer, #btn_print, #patron-plus-moins, input[type*=submit], .btn, .delete, h1{
+	display:none;}
+	
+input{
+	border:none;}
+	
+#logo{
+	display:block;
+	width:366px;
+	margin:auto;}
+
+#logo img{
+	border:none;
+    float:none;}
+	
+table{
+	margin:auto;
+	}
+
+.table-unite{
+	width:30px;}
+	
+.table-prix, .table-total, .table-delai{
+	width:90px;}
+	
+#caddie tr td{
+	padding:5px;
+	border-top:1px solid #000;}

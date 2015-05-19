@@ -1,0 +1,135 @@
+.catalogue.carre-block .border {
+border:none;
+width:6px;
+}
+
+#content-pearl {
+margin-left:160px;
+margin-top:0px;
+width:640px;
+}
+
+.catalogue.carre-block {
+margin-bottom:20px;
+margin-left:10px;
+margin-right:15px;
+}
+
+#pearl-detail {
+width:600px;
+	margin-left:200px;
+	margin-bottom:200px;}
+
+#pearl-box {
+margin-right:10px;
+}
+
+#plus-moins{
+	margin-left:18px;}
+
+/**************Menu catalogue****************/
+
+
+div#menu-catalogue{
+	margin-top:	0px;}
+
+div#menu-catalogue ul, div#menu-catalogue li {
+             padding: 0;
+             margin:0px;
+            }
+
+/*On positionne les elements du menu-catalogue */
+div#menu-catalogue ul li {
+                position:relative;
+                list-style: none; /*on enleve les icones de liste */
+				left:200;
+               } 
+
+div#menu-catalogue li a {
+               text-decoration: none; /* plus de soulignement pour les liens */
+              } 
+			  
+/* fichier pour internet explorer */
+body {
+      behavior: url(csshover.htc);
+     }
+
+/* On cache tous les sous menu-catalogue avec la propriété display none */
+div#menu-catalogue ul ul {
+                position: absolute;
+				left:0;
+                top: 0;
+                display:none;
+				margin-left:150px;
+				z-index:40;
+               }
+
+/*Lors du survol ,avec la souris, les sousmenu-catalogue apparaissent grace a display: block */
+div#menu-catalogue ul.niveau1 li.sousmenu:hover ul.niveau2{
+display:block;
+width:auto;}
+
+div#menu-catalogue ul.niveau1 li.sousmenu ul.niveau2:hover{
+display:block;
+padding:0;
+background-color:green;}
+
+.sous_categorie{
+	background-color:#CCC;
+	background-image:none;
+	border:none;
+	font-size:13px;
+	text-align:left;
+	z-index:50;
+	display:block;
+	line-height:12px;
+	color:#000;
+	padding-right:5px;
+	height:auto;
+	padding-bottom:6px;}
+	
+.sous_categorie:hover{
+	background-color:#C7317F;
+	padding-bottom:0px;
+	background-image:none;
+	border:none;
+	text-align:left;
+	height:auto;
+	line-height:auto;
+	color:#FFF;
+	padding-top:0;
+	padding-right:5px;
+	padding-bottom:6px;}
+
+.categorie{
+	background:transparent none repeat scroll 0 0;
+	border:none;
+	border:none;
+	font-size:13px;
+	text-align:left;
+	z-index:10;
+	position:absolute;
+	display:block;
+	width:150px;}
+	
+li.sousmenu.cat{}
+
+li.sousmenu:hover .categorie{
+	background-color:#C7317F;
+	color:#FFF;}
+
+div#menu-catalogue ul ul, li.sousmenu.cat{
+	width:140px;
+	}
+
+#page-bijoux {
+	margin-left:20px;
+	margin-top:-10px;
+	width:800px;
+}
+
+#content-patron{
+	margin-right:35px;}
+
+.option.bijoux{
+	padding:5px 15px;}

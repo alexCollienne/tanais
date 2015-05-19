@@ -1,0 +1,136 @@
+switch($page){
+		//Affiche la page catalogue
+		case 'catalogue':
+			include("catalogue.php");
+			break;
+
+		//Affiche la page d'inscription
+		case 'inscription':
+			include('php-print/form-inscription.php');
+			break;
+
+		//Confirmation de l'inscription
+		case 'confirm-inscription':
+			include('php-print/confirm-inscription.php');
+			break;
+
+		//Affiche le résultat d'une recherche
+		case 'recherche':
+			include('sys/search.php');
+			break;
+
+		//Appeler l'affichage des perles
+		case 'perle':
+			include('sys/sql-pearl.php');
+			while($row = mysql_fetch_row($result)){
+			include('include/printPearl.php');
+			}
+			break;
+
+		//Affiche la page personnelle. Retourne à la page d'accueil si il n'y a pas de session
+		case 'page-perso':
+			if(isset($_SESSION['nom'])){
+				include('page-perso.php');
+			}else{
+				include('homepage.php');
+			}
+			break;
+
+		//CrÃ©ation d'un dossier pour que les clients puissent envoyer leurs crÃ©ations
+		case 'create-folder':
+			mkdir ("img/creation-client/".$_SESSION['id'], 0777);
+			include('page-perso.php');
+			break;
+
+		//Affichage vers la page contact
+		case 'contact':
+			include('contact.php');
+			break;
+
+		//Affichage des conditions gÃ©nÃ©rales de ventes
+		case 'condition':
+			include('condition.php');
+			break;
+
+		//Affichage de la page contenant les patrons
+		case 'patron':
+			include('patron.php');
+			break;
+
+		//Affichage de la page décrivant les apports du nouveau site tanaïs
+		case 'nouveaute':
+			include('nouveaute.php');
+			break;
+
+		//Affichage du caddie. 
+		case 'caddie':
+			if($_SESSION['id']){
+				include('caddie.php');
+			}else{
+				include('homepage.php');
+			}
+			break;
+
+		//Affichage du caddie. Retourne à la page d'accueil si il n'y a pas de session
+		case 'commande_confirm':
+			if($_SESSION['id']){
+				include('commande-confirme.php');
+			}else{
+				include('homepage.php');
+			}
+			break;
+
+		//Appel d'un script PHP pour inscrire l'adresse mail à la newsletter
+		case 'mailing':
+			include('sys/mailing.php');
+			break;
+
+		//Affichage des nouveautés
+		case 'news':
+			include('divers.php');
+			break;
+
+		//Affichage des bijoux
+		case 'bijoux':
+			include('divers.php');
+			break;
+
+		//Affichage des promotions
+		case 'promo':
+			include('divers.php');
+			break;
+
+		//Ajouter une création personnelle
+		case 'add-crea':
+			include('sys/add-crea.php');
+			break;
+
+		//Effacer son adresse mail de la liste pour la newsletter
+		case 'erase':
+			include('php-print/newsletter-erase.php');
+			break;
+
+		//Envoyer le paiement à Ogone.
+		case 'ogone':
+			include('ogone.php');
+			break;
+
+		//Mot de passe perdu
+		case 'login-lose':
+			include('php-print/login-lose.php');
+			break;
+
+		//Cours vidéos
+		case 'cours':
+			include('cours.php');
+			break;
+
+		//Remerciement pour la commande
+		case 'remerciement':
+			include('commande-final.php');
+			break;
+
+		//Affiche la homepage par défaut.
+		default:
+			include('homepage.php');
+			break;

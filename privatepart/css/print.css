@@ -1,0 +1,57 @@
+* {
+	background:none;
+	color: #111;
+	margin:0;
+	padding:0;
+	font-size:8pt;
+}
+
+body			{ background:#ffffff; font-family:verdana; overflow:auto; font-size:10pt; color:#000000;}
+table			{ margin:20px auto; border-collapse: collapse;}
+table td			{ text-align:center; border:1px solid black; padding:5px;}
+table tr			{ height:20px;}
+table th			{ text-align:center; padding:5px 15px; color:#000000; }
+table td.name		{ text-align:left; padding:5px 10px}
+table td.quantite	{ text-align:center;}
+.borderNone{
+	border:none;
+}
+.borderLeft{
+border-left:1px solid black;
+}
+.borderRight{
+border-right:1px solid black;
+}
+.printNone{
+	background:#ff6666;
+}
+.deleteLine, .addLine{
+	text-indent:-5000px;
+	width:20px;
+	height:20px;
+	display:block;
+	cursor:pointer;
+}
+.deleteLine{
+	background:url(../img/delete.png) no-repeat center center #FFF;
+}
+.addLine{
+	background:url(../img/add.png) no-repeat center center #FFF;
+}
+ 
+.clear			{ clear:both;}
+
+div#logoPrint		{ margin:0px auto 20px; width: 366px;}
+
+div#adresseClient,
+div#adresseTanais	{ background:#2A88CB; border:1px solid #666666; color:#000000; padding:5px}
+div#adresseTanais	{ width:150px;}
+div#adresseClient h4,
+div#adresseTanais h4	{ margin:0; color:#000000;}
+div#adresseTanais	{ float:left; color:#000000;}
+div#adresseClient	{ float:right; color:#000000;}
+
+h4#numCommande		{ font-size:20px; font-family:arial; text-decoration:underline; text-align:center; margin:20px auto; clear:both;}
+
+.redBox				{ color:red; background:pink; padding:5px; border:1px solid red; margin:10px 0; font-size:12px;}
+.redBox	p			{ color:red;}

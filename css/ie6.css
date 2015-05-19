@@ -1,0 +1,67 @@
+#content{ float:left;}
+
+.box-color {
+border:1px solid black;
+display:block;
+float:left;
+height:5px;
+width:17px;
+line-height:5px;
+margin-right:5px;
+}
+
+.catalogue.carre-block .border {
+border:none;
+height:129px;
+width:14px;
+}
+
+#pearl-box {
+float:left;
+}
+
+pearl-detail{margin:40px 0 0;}
+
+#pagination{
+text-align:center;
+clear:none;}
+
+#footer #most-visited {
+margin-right:-25px;
+padding-left:25px;
+margin-left:650px;
+}
+
+#footer img{
+margin-left:0px;}
+
+#footer p{
+padding-left:0px;
+margin-left:-280px;}
+
+input.btn.creation{
+	margin-left: 255px;
+	margin-top: -29px;
+	padding-top: 0px;
+	border:none;}
+
+input.btn.submit{
+	border:none;
+	padding:0}
+
+#patron-plus-moins {
+float:left;
+margin-left:22px;
+margin-top:-27px;
+width:10px;
+}
+
+.table-total{
+	width:90px;
+}
+
+#pagination {
+clear:left;
+text-align:center;
+width:620px;
+}

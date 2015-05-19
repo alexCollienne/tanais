@@ -1,0 +1,21 @@
+#menu{margin:-29px 0 0 2px;; padding-left:0}
+
+input[type*="checkbox"], input[type*="radio"]{border:none; display:block; float:left;}
+
+span#confirmation{display:block; margin:10px 0 0 -10px;}
+#nouveaute #pearl-box, #vente #pearl-box{margin-left:-5px;}
+
+#pagination {text-align:center; width:620px}
+
+#text-accueil{width:430px; padding-left:5px; margin-top:10px; margin-right:25px; margin-left:187px; float:right;}
+#text-accueil li{list-style-type:circle}
+#donnee-perso{width:280px; margin-top:-240px;}
+#title_option_perso {margin:-130px 0 0}
+
+.link-slide{padding:3px 5px 5px; margin:10px 0 0; text-align:center; width:800px;}
+.historique-bottom{margin:0 0 0 150px}
+
+div#promo-box div#form-catalogue{margin:0 0 0 50px;}
+
+#patron-plus-moins {float:left; margin-left:43px; margin-top:-27px; width:10px;}
+.caddie-acheter{margin-left:60px; float:right; margin-top:-28px; height:22px;}

@@ -1,0 +1,127 @@
+.catalogue.carre-block .mini.image{width:118px; height:118px; border:none; font-size:10px;}
+
+#content-pearl{margin-top:0px; margin-left:170px; width:640px}
+
+div.pearl-box{
+	height:310px;
+	float:left;
+	margin:0;
+}
+div.pearl-box p{
+	font-size:9pt;
+}
+	
+#form-prix{float:right; margin-right:30px; width:195px;}
+#pearl-detail{width:600px; margin-left:215px; margin-bottom:200px; padding-left:5px;}
+.picto.description{margin-top:15px; margin-right:5px; width:12px; height:12px;}
+#pearl-detail h1{color:#C7317F; font-size:20px; font-weight:100; margin-bottom:20px;}
+#description{width:400px;}
+.catalogue-carre-image.page.perle{margin-left:-15px;}
+
+div.form-catalogue{background:url('../img/site/article-bottom.jpg') no-repeat bottom #CCC; margin:0 0 0 14px; text-align:center; width:129px;}
+div.form-catalogue p.nom-article{background:#C7307E; padding:3px; color:#fff; height:60px}
+div.form-catalogue form{margin:5px 0 0 0; padding:0;}
+div.form-catalogue input{width:45px;}
+div.form-catalogue input.caddiePerle{float:left; margin:0 10px;}
+div.form-catalogue input.ajout-article{background:url(../img/site/caddie.jpg) no-repeat center center; border:none;}
+div.promo-box div.form-catalogue{/margin:0;} /* Pour IE */
+
+/****************************menu-catalogue-catalogue catalogue************************************/
+
+
+div#menu-catalogue ul, div#menu-catalogue li {
+             padding: 0;
+             margin:0px;
+            }
+
+/*On positionne les elements du menu-catalogue */
+div#menu-catalogue ul li {
+                position:relative;
+                list-style: none; /*on enleve les icones de liste */
+				left:200;
+               } 
+
+div#menu-catalogue li a {
+               text-decoration: none; /* plus de soulignement pour les liens */
+              } 
+
+/* fichier pour internet explorer */
+body {
+      behavior: url(csshover.htc);
+     }
+
+/* On cache tous les sous menu-catalogue avec la propriété display none */
+div#menu-catalogue ul ul {
+                position: absolute;
+				left:0;
+                top: 0;
+                display:none;
+				margin-left:140px;
+               }
+
+/*Lors du survol ,avec la souris, les sousmenu-catalogue apparaissent grace a display: block */
+div#menu-catalogue ul.niveau1 li.sousmenu:hover ul.niveau2{
+display:block;
+width:120px;}
+
+.sous_categorie{
+	background-color:#CCC;
+	background-image:none;
+	border:1px solid white;
+	font-size:13px;
+	margin-bottom:-1px;
+	padding:0 0 0 5px;
+	text-align:left;
+	padding-bottom:-5px;
+	position:relative;
+	height:auto;
+	z-index:20;
+	position:relative;
+	display:block;
+	color:#000;
+	/*background-image:url(../img/site/bckg-lien-sous.jpg);
+	width:149px;*/}
+	
+.sous_categorie:hover{
+	background-color:#C7317F;
+	background-image:none;
+	border:1px solid white;
+	margin-bottom:-1px;
+	padding:0 0 0 5px;
+	text-align:left;
+	padding-bottom:-5px;
+	height:auto;
+	color:#FFF;
+	/*background-image:url(../img/site/bckg-lien-sous.jpg);
+	width:149px;*/}
+	
+.categorie{
+	background:transparent none repeat scroll 0 0;
+	border:1px solid white;
+	font-size:13px;
+	margin:0;
+	text-align:left;
+	padding:0;
+	z-index:10;
+	position:relative;
+	width:auto;
+	display:block;
+	width:140px;
+	margin-bottom:-1px;
+	/*font-size:12px;
+	margin:0; A supprimer si le nouveau style convient*/}
+	
+li.sousmenu:hover .categorie{
+	background-color:#C7317F;
+	color:#FFF;}
+	
+#page-bijoux{
+	width:850px;
+	margin-bottom:40px;}
+
+#patron-box{margin-top:20px;}
+
+#breadcrumb{margin-bottom:10px; font-size:10px;}
+#breadcrumb a{font-size:10px; color:#C7317F;}
+#breadcrumb a:hover{color:#000;}
+#breadcrumb span{font-size:10px; font-family:Verdana, Geneva, sans-serif; color:#000;}
